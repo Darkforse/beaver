@@ -1,0 +1,198 @@
+*
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+.container
+    max-width: 1170px!important;
+    padding: 0!important;
+
+.container-fluid
+    padding: 0!important;
+
+.button
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 50px;
+    text-shadow: 0px 1px 0px rgba(207, 102, 19, 0.004);
+    color: #fff;
+    background-image: linear-gradient( 90deg, rgb(255,167,66) 0%, rgb(246,124,34) 100%);
+    background-image: -moz-linear-gradient( 90deg, rgb(255,167,66) 0%, rgb(246,124,34) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(255,167,66) 0%, rgb(246,124,34) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(255,167,66) 0%, rgb(246,124,34) 100%);
+    box-shadow: 0px 3px 0px 0px rgb(207, 102, 19);
+    border: none;
+    transition: opacity 0.4s;
+    &:hover
+        opacity: 0.8;
+
+.section-title
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+    span
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+        font-size: 45px;
+        line-height: 60px;
+
+.section-subtitle
+    font-size: 22px;
+    line-height: 32px;
+    margin: 45px 0 0 0;
+    color: #949494;
+    text-align: center;
+
+//Header block
+
+.header
+    background-image: url('img/background1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 27px 0 154px 0;
+    &-title
+        margin: 117px 0 0 0;
+        padding: 0;
+        font-size: 55px;
+        line-height: 63px;
+        font-family: 'Merriweather', serif;
+        font-weight: 700;
+    &-subtitle
+        margin: 35px 0 0 0;
+        &-line
+            hr
+                margin: 10px 0 0 0;
+                color: #f68b22;
+                height: 4px;
+                opacity: 1;
+        &-text
+            font-size: 18px;
+            line-height: 28px;
+            span
+                font-weight: 600;
+    &-button
+        padding: 40px 70px;
+        font-size: 15px;
+        line-height: 1.2;
+        &-wrapper
+            margin: 45px 0 0 0;
+            display: inline-block;
+            box-shadow: 0px 25px 20px -10px rgba(0, 0, 0, 0.3);
+            border-radius: 50px;
+
+.navbar
+    background: transparent;
+    padding: 0;
+    &-nav
+        padding: 0 20px 0 35px;
+    &-social-link
+        text-decoration: none;
+        display: block;
+        padding: 0 5px;
+
+.nav-link
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 27px;    
+    color: #000;
+
+.navbar-contacts-phone
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 500;
+
+.navbar-contacts-form
+    font-size: 12px;
+    line-height: 27px;
+    color: #f68b22;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: right;
+    cursor: pointer;
+
+//Solution block
+
+.solution
+    padding: 140px 0 100px 0;
+    background-image: url('img/background2.png');
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    &-card
+        &-1
+            margin: 60px 0 0 0;
+        &-2
+            margin: 30px 0 0 0;
+        &-group
+            margin: 57px 0 0 0;
+        &-body
+            background-image: url('img/card_background.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        &-content
+            position: relative;
+            text-align: center;
+            padding: 90px 30px 65px 30px;
+        &-image
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        &-title
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 27px;
+        &-text
+            font-size: 15px;
+            line-height: 25px;
+            font-weight: 400;
+            margin: 23px 0 0 0;
+            color: #949494;
+        &-number
+            display: inline-block;
+            position: relative;
+            font-family: 'Merriweather', serif;
+            font-size: 15px;
+            line-height: 25px;
+            margin: 40px 0 10px 0;
+            color: #c4c4c4;
+            &:before
+                content: '';
+                position: absolute;
+                left: -30px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                height: 1px;
+                width: 30px;
+                background: #c4c4c4;
+            &:after
+                content: '';
+                position: absolute;
+                right: -60px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                height: 1px;
+                width: 30px;
+                background: #c4c4c4;
+
+//Questions block
+
+.questions
+    padding: 120px 0 100px 0;
+    background-image: url('img/background3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-form
+        margin: 65px 0 0 0;
+        padding: 40px 29px 26px 29px;
+        background-image: url('img/questions_form_background.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        &-indicator
+            height: 8px;
+            background: #f68b22;
+            border-radius: 3px;
