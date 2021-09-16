@@ -189,13 +189,21 @@
     background-repeat: no-repeat;
     &-form
         margin: 65px 0 0 0;
+        width: 270px;
+        height: 746px;
         background-image: url('img/questions_form_background.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         &-wrapper
-            padding: 60px 29px 26px 29px;
+            padding: 60px 0 0 0;
             text-align: center;
+        &-content
+            &[data-active='false']
+                display: none;
+        &-indicators
+            &[data-active='false']
+                display: none!important;
         &-indicator
             height: 8px;
             width: 65px;
@@ -218,30 +226,97 @@
             text-transform: uppercase;
         &-subtitle
             font-size: 15px;
-            margin: 25px 0 0 0;
-        // &-radio
-        //     display: inline-block;
-        //     input[type=radio]
-        //         display: none;
-        //     label
-        //         display: inline-block;
-        //         cursor: pointer;
-        //         position: relative;
-        //         user-select: none;
-        //         width: 24px;
-        //         height: 24px;
-        //         &:before
-        //             content: '';
-        //             border-radius: 50%;
-        //             position: absolute;
-        //             width: 24px;
-        //             height: 24px;
-        //             left: 0;
-        //             background: url('img/not-check.png');
-        //             background-size: cover;
-        //             background-position: center center;
-        //     input[type=radio]:checked + label:before
-        //         background: url('img/check.png');
+            margin: 25px 0 13px 0;
+        &-radio
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: -4px;
+            transform: translateY(-50%);
+            &-wrapper
+                padding: 12px 0;
+            &-wrapper-2
+                display: inline-block;
+                position: relative;
+            &-text
+                font-size: 13px;
+                margin: 7px auto 0 auto;
+            input[type=radio]
+                display: none;
+            label
+                display: inline-block;
+                cursor: pointer;
+                position: relative;
+                user-select: none;
+                width: 24px;
+                height: 24px;
+                &:before
+                    content: '';
+                    border-radius: 50%;
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    left: 0;
+                    background: url('img/not-check.png');
+                    background-size: cover;
+                    background-position: center center;
+            input[type=radio]:checked + label:before
+                background: url('img/check.png');
+        &-navigation
+            margin: 20px 0 0 0;
+            &[data-active='false']
+                display: none!important;
+            &-next
+                font-size: 11px;
+                font-weight: 600;
+                padding: 15px 30px
+            &-prev
+                color: #949494;
+                font-size: 11px;
+                font-weight: 600;
+                border: none;
+                background: transparent;
+                img
+                    margin-right: 8px;
+        &-step-4-title
+            font-family: 'Merriweather', serif;
+            font-size: 26px;
+            line-height: 36px;
+            span
+                font-family: 'Merriweather', serif;
+                font-size: 26px;
+                line-height: 36px;
+                font-weight: 600;
+        &-step-4-subtitle
+            font-size: 15px;
+            margin: 20px 0 0 0;
+            color: #949494;
+        &-step-4-button
+            margin: 18px 0 0 0;
+            padding: 23px 40px;
+            font-size: 15px;
+            font-weight: 600;
+        &-inputs
+            margin: 28px 0 0 0;
+            input
+                margin: 7px 0;
+                background-color: rgb(245, 245, 245);
+                box-shadow: inset 0px 2px 6px 0px rgba(0, 0, 0, 0.07);
+                border-radius: 25px;
+                border: none;
+                font-size: 14px;
+                font-weight: 400;
+                padding: 17px 30px;
+                color: #949494;
+                outline: none;
+        &-consent
+            margin: 19px 0 0 0;
+            font-size: 12px;
+            color: #949494;
+        &-logo
+            margin: 82px auto 0 auto;
+
+
 
 
 
