@@ -8,11 +8,11 @@
 
 .container {
   max-width: 1170px !important;
-  padding: 0 !important;
+  padding-top: 0 !important;
 }
 
 .container-fluid {
-  padding: 0 !important;
+  padding-top: 0 !important;
 }
 
 .button {
@@ -170,6 +170,7 @@
   background-image: url("img/card_background.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .solution-card-content {
@@ -244,15 +245,47 @@
 
 .questions-form {
   margin: 65px 0 0 0;
-  padding: 40px 29px 26px 29px;
   background-image: url("img/questions_form_background.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.questions-form-wrapper {
+  padding: 60px 29px 26px 29px;
+  text-align: center;
 }
 
 .questions-form-indicator {
   height: 8px;
-  background: #f68b22;
+  width: 65px;
+  margin: 0 5px;
   border-radius: 3px;
+  background: #e8e8e8;
+}
+
+.questions-form-indicator[data-active='true'] {
+  background: #f68b22;
+}
+
+.questions-form-overhead {
+  margin: 30px 0 0 0;
+  color: #949494;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.questions-form-title {
+  font-family: 'Merriweather', serif;
+  margin: 15px 0 0 0;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.questions-form-subtitle {
+  font-size: 15px;
+  margin: 25px 0 0 0;
 }
 /*# sourceMappingURL=style.css.map */
